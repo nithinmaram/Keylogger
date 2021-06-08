@@ -1,0 +1,4 @@
+The code is embedded in a user computer. Whatever information the user types on his keyboard are stored
+and sent in a timely manner to the destination mail address.
+It uses SMTP server to send the information.
+All characters are displayed.
